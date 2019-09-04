@@ -1,0 +1,484 @@
+@prefix : <http://example.org/hypertension_experimentation#> .
+@prefix efo: <http://www.ebi.ac.uk/efo/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix htn.owl: <https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl/> .
+@prefix ontologies: <http://transformunify.org/ontologies/> .
+@prefix turbo_merged.owl: <https://raw.githubusercontent.com/PennTURBO/Turbo-Ontology/master/ontologies/turbo_merged.owl/> .
+@prefix hypertension_experimentation: <http://example.org/hypertension_experimentation#> .
+@base <http://example.org/hypertension_experimentation> .
+
+<http://example.org/hypertension_experimentation> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#datetime
+xsd:datetime rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+obo:BFO_0000055 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000039
+obo:IAO_0000039 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+obo:IAO_0000136 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+obo:OBI_0000299 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001938
+obo:OBI_0001938 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000052
+obo:RO_0000052 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002223
+obo:RO_0002223 rdf:type owl:ObjectProperty .
+
+
+###  http://transformunify.org/ontologies/TURBO_0000303
+ontologies:TURBO_0000303 rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000004
+obo:IAO_0000004 rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0002135
+obo:OBI_0002135 rdf:type owl:DatatypeProperty .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010336
+ontologies:TURBO_0010336 rdf:type owl:DatatypeProperty ;
+                         rdfs:label "pateintAgeAtEnc"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000035
+obo:BFO_0000035 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/HTN_00000001
+obo:HTN_00000001 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000416
+obo:IAO_0000416 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_9606
+obo:NCBITaxon_9606 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0001933
+obo:OBI_0001933 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OGMS_0000097
+obo:OGMS_0000097 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OMRSE_00000011
+obo:OMRSE_00000011 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0035946
+obo:UBERON_0035946 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/VSO_0000038
+obo:VSO_0000038 rdf:type owl:Class .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010201
+ontologies:TURBO_0010201 rdf:type owl:Class .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010334
+ontologies:TURBO_0010334 rdf:type owl:Class ;
+                         rdfs:subClassOf obo:HTN_00000001 ;
+                         rdfs:label "over-18/over-120 systolic blood pressure measurement"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010335
+ontologies:TURBO_0010335 rdf:type owl:Class ;
+                         rdfs:subClassOf obo:OGMS_0000097 ;
+                         rdfs:label "over-18 health care encounter"@en .
+
+
+###  http://www.ebi.ac.uk/efo/EFO_0004950
+efo:EFO_0004950 rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/hypertension_experimentation#Yves
+hypertension_experimentation:Yves rdf:type owl:NamedIndividual ,
+                                           obo:NCBITaxon_9606 ;
+                                  ontologies:TURBO_0000303 hypertension_experimentation:Yves_birth_inst .
+
+
+###  http://example.org/hypertension_experimentation#Yves_DOB_datum
+hypertension_experimentation:Yves_DOB_datum rdf:type owl:NamedIndividual ,
+                                                     efo:EFO_0004950 ;
+                                            obo:IAO_0000136 hypertension_experimentation:Yves_birth_inst ;
+                                            obo:IAO_0000004 "1994-12-15"^^xsd:date .
+
+
+###  http://example.org/hypertension_experimentation#Yves_SBP
+hypertension_experimentation:Yves_SBP rdf:type owl:NamedIndividual ,
+                                               obo:VSO_0000038 ;
+                                      obo:RO_0000052 hypertension_experimentation:Yves .
+
+
+###  http://example.org/hypertension_experimentation#Yves_birth_inst
+hypertension_experimentation:Yves_birth_inst rdf:type owl:NamedIndividual ,
+                                                      obo:UBERON_0035946 ,
+                                                      ontologies:TURBO_0010201 .
+
+
+###  http://example.org/hypertension_experimentation#Yves_hce1_sbp_md
+hypertension_experimentation:Yves_hce1_sbp_md rdf:type owl:NamedIndividual ,
+                                                       obo:HTN_00000001 ;
+                                              obo:IAO_0000136 hypertension_experimentation:Yves_SBP ;
+                                              obo:OBI_0001938 hypertension_experimentation:Yves_hce1_sbp_valspec .
+
+
+###  http://example.org/hypertension_experimentation#Yves_hce1_sbp_valspec
+hypertension_experimentation:Yves_hce1_sbp_valspec rdf:type owl:NamedIndividual ,
+                                                            obo:OBI_0001933 ;
+                                                   obo:IAO_0000039 obo:UO_0000272 ;
+                                                   obo:OBI_0002135 "138.0"^^xsd:float .
+
+
+###  http://example.org/hypertension_experimentation#Yves_hce1_start
+hypertension_experimentation:Yves_hce1_start rdf:type owl:NamedIndividual ,
+                                                      obo:BFO_0000035 ;
+                                             obo:RO_0002223 hypertension_experimentation:Yves_hce_1 .
+
+
+###  http://example.org/hypertension_experimentation#Yves_hce1_start_date
+hypertension_experimentation:Yves_hce1_start_date rdf:type owl:NamedIndividual ,
+                                                           obo:IAO_0000416 ;
+                                                  obo:IAO_0000136 hypertension_experimentation:Yves_hce1_start ;
+                                                  obo:IAO_0000004 "2019-01-15"^^xsd:date .
+
+
+###  http://example.org/hypertension_experimentation#Yves_hce_1
+hypertension_experimentation:Yves_hce_1 rdf:type owl:NamedIndividual ,
+                                                 obo:OGMS_0000097 ;
+                                        obo:BFO_0000055 hypertension_experimentation:Yves_omrse_pat_role ;
+                                        obo:OBI_0000299 hypertension_experimentation:Yves_hce1_sbp_md .
+
+
+###  http://example.org/hypertension_experimentation#Yves_omrse_pat_role
+hypertension_experimentation:Yves_omrse_pat_role rdf:type owl:NamedIndividual ,
+                                                          obo:OMRSE_00000011 ;
+                                                 obo:RO_0000052 hypertension_experimentation:Yves .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000272
+obo:UO_0000272 rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+hypertension_experimentation:enc rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:role rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:pers rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:sns rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:encStart rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:encStartDate rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:dob rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:dobVal rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:encStartDateVal rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:ey rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:em rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:ed rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:ez rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:by rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:bm rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:bd rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:bz rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:yeardiff rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:sbpmd rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:valspec rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+hypertension_experimentation:bpval rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "over-18 encounters, year granularity"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> obo:OGMS_0000097 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:enc
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> obo:OMRSE_00000011 ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:role
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:BFO_0000055 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:enc ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:role
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> obo:NCBITaxon_9606 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:pers
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:RO_0000052 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:role ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:pers
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> ontologies:TURBO_0000303 ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:pers ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:sns
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#classPredicate> obo:UBERON_0035946 ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:sns
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:RO_0002223 ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:encStart ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:enc
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                   rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#classPredicate> obo:BFO_0000035 ;
+                                                                                                                                               <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:encStart
+                                                                                                                                             ] ;
+                                                                                                                                   rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                              rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#classPredicate> obo:IAO_0000416 ;
+                                                                                                                                                          <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:encStartDate
+                                                                                                                                                        ] ;
+                                                                                                                                              rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                         rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:IAO_0000136 ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:encStartDate ;
+                                                                                                                                                                     <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:encStart
+                                                                                                                                                                   ] ;
+                                                                                                                                                         rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                    rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#classPredicate> efo:EFO_0004950 ;
+                                                                                                                                                                                <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:dob
+                                                                                                                                                                              ] ;
+                                                                                                                                                                    rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                               rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:IAO_0000136 ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:dob ;
+                                                                                                                                                                                           <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:sns
+                                                                                                                                                                                         ] ;
+                                                                                                                                                                               rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:IAO_0000004 ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:dob ;
+                                                                                                                                                                                                      <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:dobVal
+                                                                                                                                                                                                    ] ;
+                                                                                                                                                                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:IAO_0000004 ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:encStartDate ;
+                                                                                                                                                                                                                 <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:encStartDateVal
+                                                                                                                                                                                                               ] ;
+                                                                                                                                                                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#date> ;
+                                                                                                                                                                                                                            <http://www.w3.org/2003/11/swrl#arguments> ( hypertension_experimentation:encStartDateVal
+                                                                                                                                                                                                                                                                         hypertension_experimentation:ey
+                                                                                                                                                                                                                                                                         hypertension_experimentation:em
+                                                                                                                                                                                                                                                                         hypertension_experimentation:ed
+                                                                                                                                                                                                                                                                         hypertension_experimentation:ez
+                                                                                                                                                                                                                                                                       )
+                                                                                                                                                                                                                          ] ;
+                                                                                                                                                                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#date> ;
+                                                                                                                                                                                                                                       <http://www.w3.org/2003/11/swrl#arguments> ( hypertension_experimentation:dobVal
+                                                                                                                                                                                                                                                                                    hypertension_experimentation:by
+                                                                                                                                                                                                                                                                                    hypertension_experimentation:bm
+                                                                                                                                                                                                                                                                                    hypertension_experimentation:bd
+                                                                                                                                                                                                                                                                                    hypertension_experimentation:bz
+                                                                                                                                                                                                                                                                                  )
+                                                                                                                                                                                                                                     ] ;
+                                                                                                                                                                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                                                                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#subtract> ;
+                                                                                                                                                                                                                                                  <http://www.w3.org/2003/11/swrl#arguments> ( hypertension_experimentation:yeardiff
+                                                                                                                                                                                                                                                                                               hypertension_experimentation:ey
+                                                                                                                                                                                                                                                                                               hypertension_experimentation:by
+                                                                                                                                                                                                                                                                                             )
+                                                                                                                                                                                                                                                ] ;
+                                                                                                                                                                                                                                      rdf:rest rdf:nil
+                                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                         ]
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                                   ]
+                                                                                                                                                                                        ]
+                                                                                                                                                                             ]
+                                                                                                                                                                  ]
+                                                                                                                                                       ]
+                                                                                                                                            ]
+                                                                                                                                 ]
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ontologies:TURBO_0010335 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:enc
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> ontologies:TURBO_0010336 ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:enc ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:yeardiff
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "SBPMDs with valspecs > 120 from over-18 encounters are over-18/over-120 SBPMDs"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ontologies:TURBO_0010335 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:enc
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> obo:HTN_00000001 ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:sbpmd
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:OBI_0000299 ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:enc ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:sbpmd
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> obo:OBI_0001933 ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:valspec
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:OBI_0001938 ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:sbpmd ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:valspec
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> obo:OBI_0002135 ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:valspec ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> hypertension_experimentation:bpval
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                      rdf:first hypertension_experimentation:bpval ;
+                                                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                 rdf:first 120 ;
+                                                                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                                                                               ]
+                                                                                                                                                                    ]
+                                                                                                                       ] ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> ontologies:TURBO_0010334 ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> hypertension_experimentation:sbpmd
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
