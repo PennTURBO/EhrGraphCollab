@@ -1,0 +1,148 @@
+@prefix : <http://www.semanticweb.org/markmiller/ontologies/2019/8/untitled-ontology-174#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/markmiller/ontologies/2019/8/untitled-ontology-174> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/untitled-ontology-174> rdf:type owl:Ontology ;
+                                                                                 owl:imports <http://purl.obolibrary.org/obo/obi/2019-08-06/obi.owl> .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://transformunify.org/ontologies/TURBO_0010343
+<http://transformunify.org/ontologies/TURBO_0010343> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0200000> ;
+                                                     rdfs:comment "define graph" ;
+                                                     rdfs:label "graph manipulation"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010344
+<http://transformunify.org/ontologies/TURBO_0010344> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010343> ;
+                                                     rdfs:comment "define RDF" ;
+                                                     rdfs:label "RDF graph manipulation"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010345
+<http://transformunify.org/ontologies/TURBO_0010345> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000658> ;
+                                                     <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)> ;
+                                                     rdfs:comment "define edges and vertices" ;
+                                                     rdfs:label "edge-vertex graph"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010346
+<http://transformunify.org/ontologies/TURBO_0010346> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010345> ;
+                                                     rdfs:comment "the FORMAT is defined at https://en.wikipedia.org/wiki/Resource_Description_Framework" ;
+                                                     rdfs:label "RDF graph"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010347
+<http://transformunify.org/ontologies/TURBO_0010347> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010344> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                       owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000260>
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
+                                                                                                                   owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010353>
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ]
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                       owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010346>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                       owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010346>
+                                                                     ] ;
+                                                     rdfs:label "SPARQL update process"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010348
+<http://transformunify.org/ontologies/TURBO_0010348> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
+                                                     rdfs:label "SPARQL language"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010349
+<http://transformunify.org/ontologies/TURBO_0010349> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010348> ;
+                                                     rdfs:comment "disregarding versions... is this a named individual?" ;
+                                                     rdfs:label "SPARQL update specification"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010350
+<http://transformunify.org/ontologies/TURBO_0010350> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
+                                                     rdfs:label "database statement"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010351
+<http://transformunify.org/ontologies/TURBO_0010351> rdf:type owl:Class ;
+                                                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                           owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010353>
+                                                                         ] ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                       owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000260>
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
+                                                                                                                   owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010354>
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ]
+                                                                     ] ;
+                                                     rdfs:label "SPARQL update statement generation"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010352
+<http://transformunify.org/ontologies/TURBO_0010352> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010350> ;
+                                                     rdfs:label "database update statement"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010353
+<http://transformunify.org/ontologies/TURBO_0010353> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010352> ;
+                                                     rdfs:label "SPARQL update statement"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010354
+<http://transformunify.org/ontologies/TURBO_0010354> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
+                                                     rdfs:label "SPARQL update statement generation specification"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010355
+<http://transformunify.org/ontologies/TURBO_0010355> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
+                                                     rdfs:label "Drivetrain SPARQL update fragment recipe"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010356
+<http://transformunify.org/ontologies/TURBO_0010356> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transformunify.org/ontologies/TURBO_0010354> ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                       owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010349>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                       owl:someValuesFrom <http://transformunify.org/ontologies/TURBO_0010355>
+                                                                     ] ;
+                                                     rdfs:label "Drivetrain recipe-based SPARQL update statement generation specification"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
