@@ -1,0 +1,201 @@
+@prefix : <http://www.semanticweb.org/markmiller/ontologies/2019/8/untitled-ontology-178#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/markmiller/ontologies/2019/8/untitled-ontology-178> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/untitled-ontology-178> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://transformunify.org/ontologies/TURBO_0010360
+<http://transformunify.org/ontologies/TURBO_0010360> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:integer ;
+                                                     rdfs:label "lifeSpanYearsFromDates"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010362
+<http://transformunify.org/ontologies/TURBO_0010362> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:dateTime ;
+                                                     rdfs:label "birthDate"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010363
+<http://transformunify.org/ontologies/TURBO_0010363> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:dateTime ;
+                                                     rdfs:label "deathDate"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010365
+<http://transformunify.org/ontologies/TURBO_0010365> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:integer ;
+                                                     rdfs:label "birthYear"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010366
+<http://transformunify.org/ontologies/TURBO_0010366> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:integer ;
+                                                     rdfs:label "deathYear"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010367
+<http://transformunify.org/ontologies/TURBO_0010367> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:integer ;
+                                                     rdfs:label "lifeSpanYearsFromYears"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010368
+<http://transformunify.org/ontologies/TURBO_0010368> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:range xsd:integer ;
+                                                     rdfs:label "extractedBirthYear"@en .
+
+
+###  http://transformunify.org/ontologies/TURBO_0010369
+<http://transformunify.org/ontologies/TURBO_0010369> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     rdfs:label "dateDiff"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://transformunify.org/ontologies/TURBO_0010357
+<http://transformunify.org/ontologies/TURBO_0010357> rdf:type owl:Class ;
+                                                     rdfs:label "person"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://transformunify.org/ontologies/TURBO_0010361
+<http://transformunify.org/ontologies/TURBO_0010361> rdf:type owl:NamedIndividual ,
+                                                              <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                     <http://transformunify.org/ontologies/TURBO_0010362> "1000-10-10T00:00:01"^^xsd:dateTime ;
+                                                     <http://transformunify.org/ontologies/TURBO_0010363> "1969-10-10T00:00:01"^^xsd:dateTime ;
+                                                     <http://transformunify.org/ontologies/TURBO_0010365> 1001 ;
+                                                     <http://transformunify.org/ontologies/TURBO_0010366> 1969 ;
+                                                     rdfs:label "Methuselah"@en .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/pers> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/bdt> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/by> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/bm> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/bday> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/dy> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/markmiller/ontologies/2019/8/diff> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "autogen0:TURBO_0010357(?pers) ^ autogen0:TURBO_0010362(?pers, ?bdt) ^ swrlb:date(?bdt, ?by, ?bm, ?bday) -> autogen0:TURBO_0010368(?pers, ?by)"^^xsd:string ;
+   rdfs:label "extracted birth year"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://transformunify.org/ontologies/TURBO_0010362> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/markmiller/ontologies/2019/8/bdt>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#date> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> ( <http://www.semanticweb.org/markmiller/ontologies/2019/8/bdt>
+                                                                                                                          <http://www.semanticweb.org/markmiller/ontologies/2019/8/by>
+                                                                                                                          <http://www.semanticweb.org/markmiller/ontologies/2019/8/bm>
+                                                                                                                          <http://www.semanticweb.org/markmiller/ontologies/2019/8/bday>
+                                                                                                                        )
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://transformunify.org/ontologies/TURBO_0010368> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/markmiller/ontologies/2019/8/by>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "autogen0:TURBO_0010357(?pers) ^ autogen0:TURBO_0010365(?pers, ?by) ^ autogen0:TURBO_0010366(?pers, ?dy) ^ swrlb:subtract(?diff, ?dy, ?by) -> autogen0:TURBO_0010367(?pers, ?diff)"^^xsd:string ;
+   rdfs:label "lifespan in years from years"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://transformunify.org/ontologies/TURBO_0010357> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://transformunify.org/ontologies/TURBO_0010365> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/markmiller/ontologies/2019/8/by>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://transformunify.org/ontologies/TURBO_0010366> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/markmiller/ontologies/2019/8/dy>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#subtract> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> ( <http://www.semanticweb.org/markmiller/ontologies/2019/8/diff>
+                                                                                                                                     <http://www.semanticweb.org/markmiller/ontologies/2019/8/dy>
+                                                                                                                                     <http://www.semanticweb.org/markmiller/ontologies/2019/8/by>
+                                                                                                                                   )
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://transformunify.org/ontologies/TURBO_0010367> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/markmiller/ontologies/2019/8/pers> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/markmiller/ontologies/2019/8/diff>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
