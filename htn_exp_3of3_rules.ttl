@@ -1,0 +1,186 @@
+<http://example.org/hypertension_experimentation> a <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.obolibrary.org/obo/IAO_0000111> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000114> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000115> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000117> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000119> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> a <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2001/XMLSchema#date> a <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#datetime> a <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.w3.org/2001/XMLSchema#duration> a <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://example.org/hypertension_experimentation#isAboutFirst> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000136> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://example.org/hypertension_experimentation#isAboutLast> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000055> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000039> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/OBI_0000299> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/OBI_0001938> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0000052> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/RO_0002223> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transformunify.org/ontologies/TURBO_0000303> a <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.obolibrary.org/obo/IAO_0000004> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.obolibrary.org/obo/OBI_0002135> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010336> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010337> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010338> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010339> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010340> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010341> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://transformunify.org/ontologies/TURBO_0010342> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.obolibrary.org/obo/BFO_0000035> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/HTN_00000001> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/IAO_0000416> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/NCBITaxon_9606> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_0001167> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_0001169> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OBI_0001933> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OGMS_0000097> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/OMRSE_00000011> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/UBERON_0035946> a <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/VSO_0000038> a <http://www.w3.org/2002/07/owl#Class> .
+<http://transformunify.org/ontologies/TURBO_0010201> a <http://www.w3.org/2002/07/owl#Class> .
+<http://transformunify.org/ontologies/TURBO_0010334> a <http://www.w3.org/2002/07/owl#Class> .
+<http://transformunify.org/ontologies/TURBO_0010335> a <http://www.w3.org/2002/07/owl#Class> .
+<http://transformunify.org/ontologies/TURBO_0010370> a <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ebi.ac.uk/efo/EFO_0004950> a <http://www.w3.org/2002/07/owl#Class> .
+<http://example.org/hypertension_experimentation#Yves> a <http://purl.obolibrary.org/obo/NCBITaxon_9606> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_birth_inst> a <http://purl.obolibrary.org/obo/UBERON_0035946> , <http://transformunify.org/ontologies/TURBO_0010201> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_DOB_datum> a <http://www.ebi.ac.uk/efo/EFO_0004950> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_SBP> a <http://purl.obolibrary.org/obo/VSO_0000038> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce1_sbp_md> a <http://purl.obolibrary.org/obo/HTN_00000001> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce1_sbp_valspec> a <http://purl.obolibrary.org/obo/OBI_0001933> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.obolibrary.org/obo/UO_0000272> a <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce1_start> a <http://purl.obolibrary.org/obo/BFO_0000035> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce_1> a <http://purl.obolibrary.org/obo/OGMS_0000097> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce1_start_date> a <http://purl.obolibrary.org/obo/IAO_0000416> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce2_sbp_md> a <http://purl.obolibrary.org/obo/HTN_00000001> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce2_sbp_valspec> a <http://purl.obolibrary.org/obo/OBI_0001933> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce2_start> a <http://purl.obolibrary.org/obo/BFO_0000035> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce_2> a <http://purl.obolibrary.org/obo/OGMS_0000097> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce2_start_date> a <http://purl.obolibrary.org/obo/IAO_0000416> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce3_sbp_md> a <http://purl.obolibrary.org/obo/HTN_00000001> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce3_sbp_valspec> a <http://purl.obolibrary.org/obo/OBI_0001933> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce3_start> a <http://purl.obolibrary.org/obo/BFO_0000035> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce_3> a <http://purl.obolibrary.org/obo/OGMS_0000097> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_hce3_start_date> a <http://purl.obolibrary.org/obo/IAO_0000416> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/hypertension_experimentation#Yves_omrse_pat_role> a <http://purl.obolibrary.org/obo/OMRSE_00000011> , <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org/over18EncounterInference> a <tag:stardog:api:rule:SPARQLRule> , <http://example.org/StardogRule> .
+<http://example.org/over18over120Inference> a <tag:stardog:api:rule:SPARQLRule> , <http://example.org/StardogRule> .
+<http://example.org/docdHypertensionPheno> a <tag:stardog:api:rule:SPARQLRule> , <http://example.org/StardogRule> .
+<http://purl.obolibrary.org/obo/OBI_0001169> <http://purl.obolibrary.org/obo/IAO_0000111> "age since birth measurement datum"@en ;
+   <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+   <http://purl.obolibrary.org/obo/IAO_0000115> "An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother." ;
+   <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON:Chris Stoeckert, Jie Zheng" ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> "MO_710 birth" .
+<http://example.org/hypertension_experimentation#isAboutFirst> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/IAO_0000136> .
+<http://example.org/hypertension_experimentation#isAboutLast> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.obolibrary.org/obo/IAO_0000136> .
+<http://example.org/hypertension_experimentation#Yves_DOB_datum> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_birth_inst> .
+<http://example.org/hypertension_experimentation#Yves_hce1_sbp_md> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_SBP> .
+<http://example.org/hypertension_experimentation#Yves_hce1_start_date> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_hce1_start> .
+<http://example.org/hypertension_experimentation#Yves_hce2_sbp_md> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_SBP> .
+<http://example.org/hypertension_experimentation#Yves_hce2_start_date> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_hce2_start> .
+<http://example.org/hypertension_experimentation#Yves_hce3_sbp_md> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_SBP> .
+<http://example.org/hypertension_experimentation#Yves_hce3_start_date> <http://purl.obolibrary.org/obo/IAO_0000136> <http://example.org/hypertension_experimentation#Yves_hce3_start> .
+<http://example.org/hypertension_experimentation#Yves_hce_1> <http://purl.obolibrary.org/obo/BFO_0000055> <http://example.org/hypertension_experimentation#Yves_omrse_pat_role> .
+<http://example.org/hypertension_experimentation#Yves_hce_2> <http://purl.obolibrary.org/obo/BFO_0000055> <http://example.org/hypertension_experimentation#Yves_omrse_pat_role> .
+<http://example.org/hypertension_experimentation#Yves_hce_3> <http://purl.obolibrary.org/obo/BFO_0000055> <http://example.org/hypertension_experimentation#Yves_omrse_pat_role> .
+<http://example.org/hypertension_experimentation#Yves_hce1_sbp_valspec> <http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000272> .
+<http://example.org/hypertension_experimentation#Yves_hce2_sbp_valspec> <http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000272> .
+<http://example.org/hypertension_experimentation#Yves_hce3_sbp_valspec> <http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000272> .
+<http://example.org/hypertension_experimentation#Yves_hce_1> <http://purl.obolibrary.org/obo/OBI_0000299> <http://example.org/hypertension_experimentation#Yves_hce1_sbp_md> .
+<http://example.org/hypertension_experimentation#Yves_hce_2> <http://purl.obolibrary.org/obo/OBI_0000299> <http://example.org/hypertension_experimentation#Yves_hce2_sbp_md> .
+<http://example.org/hypertension_experimentation#Yves_hce_3> <http://purl.obolibrary.org/obo/OBI_0000299> <http://example.org/hypertension_experimentation#Yves_hce3_sbp_md> .
+<http://example.org/hypertension_experimentation#Yves_hce1_sbp_md> <http://purl.obolibrary.org/obo/OBI_0001938> <http://example.org/hypertension_experimentation#Yves_hce1_sbp_valspec> .
+<http://example.org/hypertension_experimentation#Yves_hce2_sbp_md> <http://purl.obolibrary.org/obo/OBI_0001938> <http://example.org/hypertension_experimentation#Yves_hce2_sbp_valspec> .
+<http://example.org/hypertension_experimentation#Yves_hce3_sbp_md> <http://purl.obolibrary.org/obo/OBI_0001938> <http://example.org/hypertension_experimentation#Yves_hce3_sbp_valspec> .
+<http://example.org/hypertension_experimentation#Yves_SBP> <http://purl.obolibrary.org/obo/RO_0000052> <http://example.org/hypertension_experimentation#Yves> .
+<http://example.org/hypertension_experimentation#Yves_omrse_pat_role> <http://purl.obolibrary.org/obo/RO_0000052> <http://example.org/hypertension_experimentation#Yves> .
+<http://example.org/hypertension_experimentation#Yves_hce1_start> <http://purl.obolibrary.org/obo/RO_0002223> <http://example.org/hypertension_experimentation#Yves_hce_1> .
+<http://example.org/hypertension_experimentation#Yves_hce2_start> <http://purl.obolibrary.org/obo/RO_0002223> <http://example.org/hypertension_experimentation#Yves_hce_2> .
+<http://example.org/hypertension_experimentation#Yves_hce3_start> <http://purl.obolibrary.org/obo/RO_0002223> <http://example.org/hypertension_experimentation#Yves_hce_3> .
+<http://example.org/hypertension_experimentation#Yves> <http://transformunify.org/ontologies/TURBO_0000303> <http://example.org/hypertension_experimentation#Yves_birth_inst> .
+<http://example.org/hypertension_experimentation#Yves_DOB_datum> <http://purl.obolibrary.org/obo/IAO_0000004> "1994-12-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/hypertension_experimentation#Yves_hce1_start_date> <http://purl.obolibrary.org/obo/IAO_0000004> "2019-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/hypertension_experimentation#Yves_hce2_start_date> <http://purl.obolibrary.org/obo/IAO_0000004> "2019-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/hypertension_experimentation#Yves_hce3_start_date> <http://purl.obolibrary.org/obo/IAO_0000004> "2019-01-15"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/hypertension_experimentation#Yves_hce1_sbp_valspec> <http://purl.obolibrary.org/obo/OBI_0002135> "138.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/hypertension_experimentation#Yves_hce2_sbp_valspec> <http://purl.obolibrary.org/obo/OBI_0002135> "118.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://example.org/hypertension_experimentation#Yves_hce3_sbp_valspec> <http://purl.obolibrary.org/obo/OBI_0002135> "133.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://transformunify.org/ontologies/TURBO_0010336> <http://www.w3.org/2000/01/rdf-schema#label> "pateintAgeAtEnc"@en .
+<http://transformunify.org/ontologies/TURBO_0010337> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderProp37"@en .
+<http://transformunify.org/ontologies/TURBO_0010338> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderProp38"@en .
+<http://transformunify.org/ontologies/TURBO_0010339> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderProp39"@en .
+<http://transformunify.org/ontologies/TURBO_0010340> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderProp40"@en .
+<http://transformunify.org/ontologies/TURBO_0010341> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderProp41"@en .
+<http://transformunify.org/ontologies/TURBO_0010342> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderProp42"@en .
+<http://purl.obolibrary.org/obo/OBI_0001169> <http://www.w3.org/2000/01/rdf-schema#label> "age since birth measurement datum"@en .
+<http://transformunify.org/ontologies/TURBO_0010334> <http://www.w3.org/2000/01/rdf-schema#label> "over-18/over-120 systolic blood pressure measurement"@en .
+<http://transformunify.org/ontologies/TURBO_0010335> <http://www.w3.org/2000/01/rdf-schema#label> "over-18 health care encounter"@en .
+<http://transformunify.org/ontologies/TURBO_0010370> <http://www.w3.org/2000/01/rdf-schema#label> "placeholderClass"@en .
+<http://purl.obolibrary.org/obo/OBI_0001169> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0001167> .
+<http://transformunify.org/ontologies/TURBO_0010334> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/HTN_00000001> .
+<http://transformunify.org/ontologies/TURBO_0010335> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OGMS_0000097> .
+<http://example.org/over18EncounterInference> <tag:stardog:api:rule:content> """IF {
+   ?person a <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+   ?dobDatum a <http://www.ebi.ac.uk/efo/EFO_0004950> ;
+             <http://purl.obolibrary.org/obo/IAO_0000136> ?birthInst ;
+             <http://purl.obolibrary.org/obo/IAO_0000004> ?dobVal .
+   ?birthInst a <http://purl.obolibrary.org/obo/UBERON_0035946> , <http://transformunify.org/ontologies/TURBO_0010201> .
+   ?hce a <http://purl.obolibrary.org/obo/OGMS_0000097> ;
+        <http://purl.obolibrary.org/obo/BFO_0000055> ?patRole .
+   ?patRole a <http://purl.obolibrary.org/obo/OMRSE_00000011> ;
+            <http://purl.obolibrary.org/obo/RO_0000052> ?person .
+   ?hceStart a <http://purl.obolibrary.org/obo/BFO_0000035> ;
+             <http://purl.obolibrary.org/obo/RO_0002223> ?hce .
+   ?hceStartDate a <http://purl.obolibrary.org/obo/IAO_0000416> ;
+                 <http://purl.obolibrary.org/obo/IAO_0000136> ?hceStart ;
+                 <http://purl.obolibrary.org/obo/IAO_0000004> ?hceStartDateVal .
+   FILTER ((?hceStartDateVal - ?dobVal)>\"P18Y\"^^<http://www.w3.org/2001/XMLSchema#duration>)
+}
+THEN {
+   ?hce a <http://transformunify.org/ontologies/TURBO_0010335> .
+}
+""" .
+<http://example.org/over18over120Inference> <tag:stardog:api:rule:content> """IF {
+   ?hce a <http://purl.obolibrary.org/obo/OGMS_0000097> ;
+        <http://purl.obolibrary.org/obo/OBI_0000299> ?sbpMd .
+   ?sbpMd a <http://purl.obolibrary.org/obo/HTN_00000001> ;
+          <http://purl.obolibrary.org/obo/IAO_0000136> ?SBP ;
+          <http://purl.obolibrary.org/obo/OBI_0001938> ?sbpValspec .
+   ?SBP a <http://purl.obolibrary.org/obo/VSO_0000038> .
+   ?sbpValspec a <http://purl.obolibrary.org/obo/OBI_0001933> ;
+               <http://purl.obolibrary.org/obo/IAO_0000039> <http://purl.obolibrary.org/obo/UO_0000272> ;
+               <http://purl.obolibrary.org/obo/OBI_0002135> ?sbpVal .
+   FILTER (?sbpVal>120)
+}
+THEN {
+   ?sbpMd a <http://transformunify.org/ontologies/TURBO_0010334> .
+}
+""" .
+<http://example.org/docdHypertensionPheno> <tag:stardog:api:rule:content> """IF {
+   ?h1 a <http://transformunify.org/ontologies/TURBO_0010335> ;
+       <http://purl.obolibrary.org/obo/OBI_0000299> ?o18o1201 .
+   ?o18o1201 a <http://transformunify.org/ontologies/TURBO_0010334> ;
+             <http://purl.obolibrary.org/obo/IAO_0000136> ?SBP1 .
+   ?SBP1 a <http://purl.obolibrary.org/obo/VSO_0000038> ;
+         <http://purl.obolibrary.org/obo/RO_0000052> ?p1 .
+   ?p1 a <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+   ?h2 a <http://transformunify.org/ontologies/TURBO_0010335> ;
+       <http://purl.obolibrary.org/obo/OBI_0000299> ?o18o1202 .
+   ?o18o1202 a <http://transformunify.org/ontologies/TURBO_0010334> ;
+             <http://purl.obolibrary.org/obo/IAO_0000136> ?SBP2 .
+   ?SBP2 a <http://purl.obolibrary.org/obo/VSO_0000038> ;
+         <http://purl.obolibrary.org/obo/RO_0000052> ?p2 .
+   ?p2 a <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+   FILTER (?h1!=?h2)
+   FILTER (?p1=?p2)
+   BIND(uuid() AS ?pheno)
+}
+THEN {
+   ?pheno a <http://purl.obolibrary.org/obo/HTN_00000004> ;
+          <http://purl.obolibrary.org/obo/RO_0000052> ?p1 .
+}
+""" .
+<http://example.org/over18EncounterInference> <http://www.w3.org/2000/01/rdf-schema#comment> "encounter date - birth date > 18 year? that's an adult encounter" .
+<http://example.org/over18over120Inference> <http://www.w3.org/2000/01/rdf-schema#comment> "blood pressure measurement from over-18 encounter has value > 120" .
+<http://example.org/docdHypertensionPheno> <http://www.w3.org/2000/01/rdf-schema#comment> "person with over-18, over-120 blood pressure measurement datums from two separate encounters has a documented hypertension phenotype" .
