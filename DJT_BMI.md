@@ -6,13 +6,17 @@ DJT|191|113
 
 - How do we describe the provenance of that data, in terms of rows and columns. 
     - _Assume that the `patient` column can be used a unique primary key._
+    - Is it OK to use the IAO term `data set` here?
+    
+> editor note:2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type
+	
 - How do we describe the SAPRQL update process that calculated DJT's BMI?
 - How do we say that the BMI data was transformed into RDF triples? 
     - How do we say what RDF triples are?
     - Assume some software application generates the update statement below, based on a configuration file. The configuration file could be the plan specification. 
         - How should the application (which reads the configuration and the input data and writes the BMI triples) be instantiated? Some thing the bears the plan? Something that participates in a process?
     - we know that the height and weight were measured in the course of some health care encounter, which would typically have start and end dates. 
-        - Is that precise enough for a multi-day inpatient encounter. 
+        - Is that precise enough for a multi-day inpatient encounter?
         - What about instantiating mass and length measurement processes with start dates? Is that too heavyweight?
 		- What about the temporality of the BMI? Is it important to say when it was calculated? When it was true? (Does that require time stamps? Time stamped measurement datums seem heavyweight, in that they would require "another" part to actually bear the BMI value)
 
