@@ -9,7 +9,7 @@ DJT|191|113
 - How do we say that the BMI data was transformed into RDF triples? How do we say what RDF triples are?
     - say some software application generates the update statement below, based on a configuration file. The configuration file could be the plan specification. How should the application (which reads the configuration and the input data and writes the BMI triples) be instantiated? Some thing the bears the plan? Something that participates in a process?
 
-
+```
     # baseURI: https://www.whitehouse.gov#
     # prefix: whitehouse
     
@@ -76,7 +76,7 @@ DJT|191|113
     .
     
     :source_data a obo:IAO_0000100 .
-
+```
 ----
 
     prefix : <https://www.whitehouse.gov#> 
